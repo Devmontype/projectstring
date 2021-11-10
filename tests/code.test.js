@@ -2,8 +2,8 @@ const adder_fn=require('../code');
 
 test('adder_fn should return 0',()=>{
     expect(adder_fn("")).toBe(0)
-    expect(adder_fn(`1,2`,"\n")).toBe(0)
-    expect(adder_fn(`2,,,,,,,3,,,,5,,6,,,7`,"\n")).toBe(0)
+    expect(adder_fn(`1,2`,"\n")).toBe(3)
+    expect(adder_fn(`2,,,,,,,3,,,,5,,6,,,7`,"\n")).toBe(23)
 })
 
 test('adder_fn should return 1',()=>{
