@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 let delim='';
 let str='';
-//console.log(string_add("23,56,7"))
+
 
 //console.log(string_add("0.1,-2,9,-3",","))
 
