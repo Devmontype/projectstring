@@ -23,6 +23,19 @@ function string_add(str = "", dm = "") {
                         sum += num;
                     }
 
+                }else{
+                    a_sep=cm_sep[i].split("")
+                    for(let j=0;j<a_sep.length;j++){
+                        if (!isNaN(a_sep[j])) {
+                            let num2 = Number(a_sep[j])
+                            if (num2 < 0) {
+                                negative.push(num2)
+                            } else {
+                                sum += num2;
+                            }
+        
+                        }
+                    }
                 }
 
             }
