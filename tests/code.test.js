@@ -23,3 +23,7 @@ test('adder_fn should return 0.1',()=>{
 test('adder_fn should return Exception',()=>{
     expect(adder_fn("0.1,-2,9,-3",",")).toBe("negatives not allowed : -2,-3")
 })
+
+test('adder_fn should return 0',()=>{
+    expect(adder_fn(`1,2`,"\n")).toBe(0)
+})
